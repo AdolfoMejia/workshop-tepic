@@ -1,28 +1,18 @@
-.comment {
-  height: 450px;
-  background: $color-grey2;
+.Comment_main {
+  background: #f4f4f4a5;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
   font-family: $font-main;
+  text-align: center;
+  padding: 100px 0;
 
-  .text {
-    display:flex;
-    max-width: 600px;
-    text-align: center;
-    justify-content: center;
+  .Comment_text {
     font-weight: bold;
-    font-size: 1.1em;
+    width: 500px;
     
-    .h3 {
-      font-size: 1.5em;
+    h3 {
+      line-height: 35px;
+      font-size: 25px;
     }
-  }
-}
-@media only screen and (max-width:768px){
-
-  .comment{
-    padding:0 10px;
   }
 }

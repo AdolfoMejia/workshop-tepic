@@ -1,35 +1,41 @@
-.hero{
-    justify-content: center;
+.Hero_main{
+    align-items: center;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     font-family: $font-main;
-    img{
-        @media only screen and (max-width:768px){
-            width: 100%;
-        }
-        @media screen and (min-width: 1200px) {
-            margin-left: 50px;
+    padding-top: 60px;
+
+    .Hero_img {
+        img {
             width: 500px;
-            height: 500px;
         }
     }
-    .herophs{
-        margin-top: 163px;
-        .herophTitle{
-            margin: 0;
+
+    .Hero_text{
+        width: 30%;
+
+        .herohTitle{
+            color: #262626;
             font-size: 40px;
         }
+
         .herophContent{
-            margin: 0;
+            color:#A1A1A1;
             font-size: 12px;
-            color:grey;
+            line-height: 20px;
         }
+
         .heroButton{
-            color:  rgb(156, 134, 6);
-            border-radius: 0;
-            padding: 5px 15px;
-            border-color: rgb(156, 134, 6);
+            border: 1px solid #84724C;
             background-color: white;
+            color:  #84724C;
+            padding: 5px 15px;
+
+            &:hover {
+                background-color: #f1f1f1;
+                cursor: pointer;
+            }
         }
     }
 }
